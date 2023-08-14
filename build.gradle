@@ -17,4 +17,13 @@ plugins {
     id 'org.jetbrains.kotlin.multiplatform' version '1.7.10' apply false
     id 'org.jetbrains.kotlin.plugin.serialization' version '1.8.0' apply false
     id 'org.jlleitschuh.gradle.ktlint' version '11.0.0' apply false
+
+    id "org.sonarqube" version "4.0.0.2929"
+}
+
+sonar {
+    properties {
+        property "sonar.projectKey", "ExitMed"
+        property "sonar.projectName", "ExitMed"
+    }
 }
